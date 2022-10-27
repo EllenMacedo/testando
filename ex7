@@ -1,0 +1,26 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #define N 5
+  
+ int main (){
+ 	int matriz[N][N];
+ 	int i, j;
+ 	printf("Preencha a matriz:\n");
+ 	for (i=0;i<N;i++){
+ 		for(j=0;j<N;j++){
+ 			scanf("%d", &matriz[i][j]);
+		 }
+	 }
+	
+	printf("Numeros impares:\n");
+	printf("posicao\n");
+	
+	 	for (i=0;i<N;i++){
+	 		for(j=0;j<N;j++){
+			  if(matriz[i][j] % 2==1){
+	 			printf("%d.%d:\t%d\n",i,j, matriz[i][j]);
+			 }
+		 }
+	 }
+	 return 0;
+ }
